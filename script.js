@@ -5,6 +5,32 @@ document.onload = function() {
 };
 
 $(document).ready(function(){
+
+  $("#button").click(function(){
+    let bg = document.querySelector("body").style.backgroundColor;
+    if (bg == "black") {
+      document.querySelector("body").style.backgroundColor = "white";
+  
+      $("#cs").show();
+      $("#acting").hide();
+  
+      
+      $("#button").attr("src", "assets/mask.png");
+  
+      document.querySelector("#footer").style.color = "black";
+    }
+    else {
+      document.querySelector("body").style.backgroundColor = "black";
+      $("#cs").hide();
+      $("#acting").show();
+  
+      $("#button").attr("src", "assets/sad-mask.png");
+  
+      document.querySelector("#footer").style.color = "white";
+      
+    }
+  }); 
+
   $("#spotify").hover(function(){
     $(this).attr("src", "assets/spotify.gif");
     }, function(){
@@ -17,46 +43,24 @@ $(document).ready(function(){
     $("#contact-me").hide();
   });
 
-  $("#google").hover(function(){
-    $("#google-stills").show();
-    $("#google-hover").hide();
-    }, function(){
-    $("#google-stills").hide();
-    $("#google-hover").show();
+  $("#google").click(function(){
+    if ($("#google-stills").is(":visible")) {
+      $("#google-stills").hide();
+    }
+    else {
+      $("#google-stills").show();
+    }
   });
 
-  $("#dsg").hover(function(){
-    $("#dsg-stills").show();
-    $("#dsg-hover").hide();
-    }, function(){
-    $("#dsg-stills").hide();
-    $("#dsg-hover").show();
+  $("#dsg").click(function(){
+    if ($("#dsg-stills").is(":visible")) {
+      $("#dsg-stills").hide();
+    }
+    else {
+      $("#dsg-stills").show();
+    }
   });
   
 });
 
 
-$("#button").click(function(){
-  let bg = document.querySelector("body").style.backgroundColor;
-  if (bg == "black") {
-    document.querySelector("body").style.backgroundColor = "white";
-
-    $("#cs").show();
-    $("#acting").hide();
-
-    
-    $("#button").attr("src", "assets/mask.png");
-
-    document.querySelector("#footer").style.color = "black";
-  }
-  else {
-    document.querySelector("body").style.backgroundColor = "black";
-    $("#cs").hide();
-    $("#acting").show();
-
-    $("#button").attr("src", "assets/sad-mask.png");
-
-    document.querySelector("#footer").style.color = "white";
-    
-  }
-}); 
