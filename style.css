@@ -1,6 +1,7 @@
 body {
     font-family: 'Nanum Gothic Coding';
     color: black;
+    text-align: center;
 }
 
 #cs {
@@ -118,7 +119,7 @@ a:link {
 }
 
 a:visited {
-    color: black;
+    color: lightblue;
 }
 
 a:hover {
@@ -139,12 +140,12 @@ a:hover {
     padding: 10px;
 }
 
-.stills {
+/* .stills {
     display: none;
-}
+} */
 
 .stills img {
-    width: 40%;
+    width: 25%;
 }
 
 #agency-info {

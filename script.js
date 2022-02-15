@@ -43,23 +43,23 @@ $(document).ready(function(){
     $("#contact-me").hide();
   });
 
-  $("#google").click(function(){
-    if ($("#google-stills").is(":visible")) {
-      $("#google-stills").hide();
-    }
-    else {
-      $("#google-stills").show();
-    }
-  });
+  // $("#google").click(function(){
+  //   if ($("#google-stills").is(":visible")) {
+  //     $("#google-stills").hide();
+  //   }
+  //   else {
+  //     $("#google-stills").show();
+  //   }
+  // });
 
-  $("#dsg").click(function(){
-    if ($("#dsg-stills").is(":visible")) {
-      $("#dsg-stills").hide();
-    }
-    else {
-      $("#dsg-stills").show();
-    }
-  });
+  // $("#dsg").click(function(){
+  //   if ($("#dsg-stills").is(":visible")) {
+  //     $("#dsg-stills").hide();
+  //   }
+  //   else {
+  //     $("#dsg-stills").show();
+  //   }
+  // });
   
 });
 
