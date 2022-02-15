@@ -12,7 +12,7 @@ body {
 }
 
 #button {
-    width: 80px;
+    width: 90px;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -38,6 +38,16 @@ body {
     position: absolute;
     top: -25%;
     left: 50%;
+}
+
+.hover-div {
+    position: absolute;
+    top: -25px;
+    left: 55%;
+}
+
+#google-hover, #dsg-hover {
+    width: 150px;
 }
 
 .main-img {
@@ -116,6 +126,9 @@ a:hover {
 }
 
 /* ACTING SECTION */
+#a-work row {
+    text-align: center;
+}
 
 #acting {
     display: none;
@@ -126,12 +139,12 @@ a:hover {
     padding: 10px;
 }
 
-#google-stills {
+.stills {
     display: none;
 }
 
-#google-stills img {
-    width: 15%;
+.stills img {
+    width: 30%;
 }
 
 #agency-info {

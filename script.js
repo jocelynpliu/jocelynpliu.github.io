@@ -19,9 +19,20 @@ $(document).ready(function(){
 
   $("#google").hover(function(){
     $("#google-stills").show();
+    $("#google-hover").hide();
     }, function(){
     $("#google-stills").hide();
+    $("#google-hover").show();
   });
+
+  $("#dsg").hover(function(){
+    $("#dsg-stills").show();
+    $("#dsg-hover").hide();
+    }, function(){
+    $("#dsg-stills").hide();
+    $("#dsg-hover").show();
+  });
+  
 });
 
 
