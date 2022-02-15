@@ -3,6 +3,14 @@ body {
     color: black;
 }
 
+#cs {
+    color: black;
+}
+
+#acting {
+    color: white;
+}
+
 #button {
     width: 80px;
     position: absolute;
@@ -22,28 +30,29 @@ body {
     border: black 1px solid;
 }
 
-#img-div {
+.img-div {
     position: relative;
 }
 
-#sub-img-div {
+.sub-img-div {
     position: absolute;
     top: -25%;
     left: 50%;
 }
 
-#main-img {
+.main-img {
     width: 250px;
     object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2%;
 }
 
 #contact-me {
     width: 400px;
     object-fit: scale-down;
+    display: none;
 }
-
 
 #resume {
     text-align: center;
@@ -106,7 +115,35 @@ a:hover {
     color: green;
 }
 
+/* ACTING SECTION */
 
+#acting {
+    display: none;
+}
+
+#category {
+    font-size: 20px;
+    padding: 10px;
+}
+
+#google-stills {
+    display: none;
+}
+
+#google-stills img {
+    width: 15%;
+}
+
+#agency-info {
+    margin-top: 5%;
+}
+
+#agency-logo {
+    width: 400px;
+    object-fit: scale-down;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 #footer {
     text-align: center;
