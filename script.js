@@ -6,9 +6,9 @@ document.onload = function() {
 
 $(document).ready(function(){
     $("#spotify").hover(function(){
-      $(this).attr("src", "images/spotify.gif");
+      $(this).attr("src", "assets/spotify.gif");
       }, function(){
-      $(this).attr("src", "images/spotify.png");
+      $(this).attr("src", "assets/spotify.png");
     });
   });
 

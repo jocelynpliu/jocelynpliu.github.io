@@ -28,6 +28,7 @@ body {
 #resume {
     text-align: center;
     text-decoration: underline;
+    color: black;
 }
 
 h5 {
@@ -73,9 +74,18 @@ h5 {
     background-color: rgb(250, 229, 233);
 }
 
-a {
-    text-decoration: none;
+a:link {
+    color: lightblue;
 }
+
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: green;
+}
+
 
 
 #footer {
