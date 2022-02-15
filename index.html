@@ -12,34 +12,49 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container mt-4">
+    <div class="container my-5">
+        <img id="button" src="images/mask.png">
         <div class="row" id="header">
             <h4><b>Jocelyn Liu</b></h4>
-            <p> Computer Science Student at USC <p>
-            <h3 class="actor">Actress based in Los Angeles</h3>
+            <p> 
+                Computer Science Student at USC <br> 
+                Graduating 2023
+            <p>
+            <p class="actor">Actress based in Los Angeles</p>
+            <img class="actor" src="images/drawing1.JPG">
+            <img id="main-img" src="images/main.jpg">
+            <img class="actor" src="images/drawing2.png">
         </div>
-        <img id="main-img" src="images/main.jpg">
-        <div class="row my-4">
+
+        
+        <div class="row my-4" id="links">
+            <h5 id="resume">Resume</h5>
             <h5>Links:</h5>
-            <p>LinkedIn
-            Git</p>
+            <p>
+                <a target="_blank" href="https://www.linkedin.com/in/jocelynpliu/">LinkedIn</a><br>
+                Github <a target="_blank" href=https://github.com/jocelynpliu>personal</a>/<a target="_blank" href="https://github.com/jliu6011">school</a>
+
+            </p>
         </div>
-        <div class="row my-6" id="work">
 
-            <h5>Work Samples:</h5>
-            <div class="col-6">
-                <a target="_blank" href="https://jocelynspotify.herokuapp.com/">Spotify Project</a>
-                <img id="spotify" src="images/spotify.png">
+        <div class="container" id="work">
+            <div class="row">
+                <h5>Work Samples:</h5>
+                <div class="col-12 work-sample" id="spot">
+                    <p><a target="_blank" href="https://jocelynspotify.herokuapp.com/">Spotify Project</a></p>
+                    <img id="spotify" src="images/spotify.png">
+                    <p>skills used: HTML/CSS, JavaScript, jQuery, Spotify API, Heroku</p>
+                </div>
+                <div class="col-12 work-sample" id="web">
+                    <p><a target="_blank" href="http://303.itpwebdev.com/~jliu6011/student_page.html">Web Dev Assignments</a></p>
+                    <img src="images/webdev.png">
+                    <p>skills used: HTML/CSS, JavaScript</p>
+    
+                </div>
             </div>
-            <div class="col-6">
-                <a target="_blank" href="http://303.itpwebdev.com/~jliu6011/student_page.html">Web Dev Assignments</a>
-
-            </div>
-
-
-            
-
         </div>
+        
+
     </div>
     
     <div class="row" id="footer">

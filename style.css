@@ -3,6 +3,13 @@ body {
     color: black;
 }
 
+#button {
+    width: 50px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
 #header {
     text-align: center;
 }
@@ -11,21 +18,67 @@ body {
     display: none;
 }
 
-#main-img {
+#header img {
     width: 250px;
-    display: block;
+    object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
 }
 
-#work img {
-    width: 75%;
+#resume {
+    text-align: center;
+    text-decoration: underline;
+}
+
+h5 {
+    text-align: center;
+}
+
+#links p {
+    text-align: center;
+}
+
+#work {
+    max-width: 75%;
+}
+
+.work-sample {
+    border: solid black 1px;
+    padding: 2%;
+    max-width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.work-sample img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 3%;
+}
+
+.work-sample p {
+    text-align: center;
+}
+
+#spot {
+    background-color: rgb(252, 233, 210);
+}
+
+#web {
+    background-color: rgb(250, 229, 233);
 }
 
 a {
     text-decoration: none;
 }
 
-#footer{
+
+#footer {
     text-align: center;
+    font-size: 12px;
 }
