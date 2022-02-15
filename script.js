@@ -10,7 +10,17 @@ $(document).ready(function(){
       }, function(){
       $(this).attr("src", "assets/spotify.png");
     });
+});
+
+$(document).ready(function(){
+  $("#main-img").hover(function(){
+    $("#contact-me").show();
+    }, function(){
+    $("#contact-me").hide();
   });
+});
+
+
 
 $("#button").click(function(){
   // let bg = document.querySelector("body").style.backgroundColor;

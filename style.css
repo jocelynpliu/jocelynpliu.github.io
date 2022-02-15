@@ -4,7 +4,7 @@ body {
 }
 
 #button {
-    width: 50px;
+    width: 80px;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -18,12 +18,32 @@ body {
     display: none;
 }
 
-#header img {
+#header .col-3 {
+    border: black 1px solid;
+}
+
+#img-div {
+    position: relative;
+}
+
+#sub-img-div {
+    position: absolute;
+    top: -25%;
+    left: 50%;
+}
+
+#main-img {
     width: 250px;
     object-fit: scale-down;
     margin-left: auto;
     margin-right: auto;
 }
+
+#contact-me {
+    width: 400px;
+    object-fit: scale-down;
+}
+
 
 #resume {
     text-align: center;
