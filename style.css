@@ -12,14 +12,18 @@ body {
     color: white;
 }
 
-#button {
+.button {
     width: 70px;
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    margin: 10px;
 }
 
-#header {
+#mask {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+.header {
     text-align: center;
 }
 
@@ -27,7 +31,7 @@ body {
     display: none;
 }
 
-#header .col-3 {
+.header .col-3 {
     border: black 1px solid;
 }
 
@@ -175,3 +179,27 @@ a:hover {
     font-size: 12px;
 }
 
+#camera {
+    width: 30px;
+    position: absolute;
+    right: 0px;
+}
+
+/* FILM PHOTOS PAGE */
+
+#photo-head img {
+    width: 75px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.photo-h img {
+    width: 600px;
+    margin: 2%;
+}
+
+.photo-v img {
+    width: 400px;
+    margin: 2%;
+}
