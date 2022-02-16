@@ -19,7 +19,7 @@ $(document).ready(function(){
   
       document.querySelector("#footer").style.color = "black";
     }
-    else {
+    else {  
       document.querySelector("body").style.backgroundColor = "black";
       $("#cs").hide();
       $("#acting").show();
