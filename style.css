@@ -13,7 +13,7 @@ body {
 }
 
 #button {
-    width: 90px;
+    width: 70px;
     position: absolute;
     top: 5px;
     right: 5px;
@@ -69,6 +69,11 @@ body {
     text-align: center;
     text-decoration: underline;
     color: black;
+}
+
+.logo {
+    width: 45px;
+    margin-right: 5px;
 }
 
 h5 {
@@ -159,7 +164,14 @@ a:hover {
     margin-right: auto;
 }
 
+.handwritten {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #footer {
     text-align: center;
     font-size: 12px;
 }
+
