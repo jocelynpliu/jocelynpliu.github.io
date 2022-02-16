@@ -69,7 +69,7 @@ body {
     display: none;
 }
 
-#resume {
+.resume {
     text-align: center;
     text-decoration: underline;
     color: black;
@@ -124,11 +124,11 @@ h5 {
 }
 
 a:link {
-    color: lightblue;
+    color: rgb(143, 180, 192);
 }
 
 a:visited {
-    color: lightblue;
+    color: rgb(143, 180, 192);
 }
 
 a:hover {
@@ -144,7 +144,7 @@ a:hover {
     display: none;
 }
 
-#category {
+.category {
     font-size: 20px;
     padding: 10px;
 }
