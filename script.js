@@ -6,7 +6,7 @@ document.onload = function() {
 
 $(document).ready(function(){
 
-  $("#index-button").click(function(){
+  $("#mask").click(function(){
     let bg = document.querySelector("body").style.backgroundColor;
     if (bg == "black") {
       document.querySelector("body").style.backgroundColor = "white";
@@ -15,7 +15,7 @@ $(document).ready(function(){
       $("#acting").hide();
   
       
-      $("#index-button").attr("src", "assets/mask.png");
+      $("#mask").attr("src", "assets/mask.png");
   
       document.querySelector("#footer").style.color = "black";
     }
@@ -24,7 +24,7 @@ $(document).ready(function(){
       $("#cs").hide();
       $("#acting").show();
   
-      $("#index-button").attr("src", "assets/sad-mask.png");
+      $("#mask").attr("src", "assets/sad-mask.png");
   
       document.querySelector("#footer").style.color = "white";
       
