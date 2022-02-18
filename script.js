@@ -43,6 +43,17 @@ $(document).ready(function(){
     $("#contact-me").hide();
   });
 
+  $("#mask").hover(function(){
+    $("#click-me").show();
+    }, function(){
+    $("#click-me").hide();
+  });
+
+  $("#mask").click(function(){
+    $("#click-me").hide();
+    });
+
+
   // $("#google").click(function(){
   //   if ($("#google-stills").is(":visible")) {
   //     $("#google-stills").hide();

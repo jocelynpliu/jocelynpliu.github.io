@@ -12,6 +12,11 @@ body {
     color: white;
 }
 
+
+#click-me {
+    width: 300px;
+}
+
 .button {
     width: 70px;
     margin: 10px;
@@ -21,6 +26,14 @@ body {
     position: absolute;
     top: 0px;
     right: 0px;
+}
+
+#click-me {
+    position: absolute;
+    width: 150px;
+    top: 50px;
+    right: 50px;
+    display: none;
 }
 
 .header {
@@ -78,6 +91,12 @@ body {
 .logo {
     width: 45px;
     margin-right: 5px;
+}
+
+#usc-logo {
+    color: #990000;
+    font-size: large;
+    font-weight: bold;
 }
 
 h5 {
