@@ -1,11 +1,8 @@
-
-
 document.onload = function() {
-    $(".main-img").fadeIn();
+  
 };
 
 $(document).ready(function(){
-
   $("#mask").click(function(){
     let bg = document.querySelector("body").style.backgroundColor;
     if (bg == "black") {
