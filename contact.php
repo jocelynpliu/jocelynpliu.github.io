@@ -31,20 +31,19 @@ if ( isset($_POST['name']) && isset($_POST['email']) ) {
 
   <form action="contact_confirmation.php" method="POST">
     
-    <label for="fname">Name</label>
+    <label for="fname"><span class="text-danger">*</span> Name</label>
     <input type="text" id="name" name="name" placeholder="Your name...">
     <br>
-    <label for="fname">Email</label>
+    <label for="fname"><span class="text-danger">*</span> Email</label>
     <input type="text" id="email" name="email" placeholder="Your email...">
     <br>
-
-    <label for="subject">Subject</label>
+    <label for="subject"><span class="text-danger">*</span> Subject</label>
     <input id="subject" name="subject" placeholder="What's up?" ></input>
     <br>
-
-    <label for="message">Message</label>
+    <label for="message"><span class="text-danger">*</span> Message</label>
     <textarea id="message" name="message" placeholder="Your message..." ></textarea>
     <br>
+    <p class="text-danger">* Required </p>
     <?php
 						if ( isset($error) && !empty($error) ) {
 							echo $error;

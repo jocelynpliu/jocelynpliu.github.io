@@ -56,8 +56,9 @@
         </form>
     </div>
 
-    
-    <div class="row">
+    <h5> <b>Reccomendations submitted through this page</b></h5>
+    <div class="row my-3" id="current-recs">
+        
     <?php while ( $row = $result->fetch_assoc() ) : ?>
         <img src="<?php echo $row["imageURL"]?>" class="book-cover"/>
     <?php endwhile; ?>
@@ -81,7 +82,6 @@
     ajaxGet("https://www.googleapis.com/books/v1/volumes?q=" + searchInput + "&key=AIzaSyC75f3jpgTWPU_Q6_33Llkgwf-77tmoDQw", function(results) {
 
         console.log("success");
-
         // convert the data into js object
         let jsResults = JSON.parse(results);
 
