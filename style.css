@@ -199,6 +199,15 @@ a:hover {
     right: 0px;
 }
 
+/* ABOUT ME PAGE */
+.about-me {
+    width: 20%;
+}
+
+.label {
+    margin: 5%;
+}
+
 /* FILM PHOTOS PAGE */
 
 #photo-head img {
