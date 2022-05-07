@@ -1,3 +1,18 @@
+<?php
+    require "config/config.php";
+
+    $mysqli = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+	if ( $mysqli->connect_errno ) {
+		echo $mysqli->connect_error;
+		exit();
+	}
+
+    $sql = 'SELECT imageURL from books;';
+    $result = $mysqli->query($sql);
+
+    $mysqli->close();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,7 +22,7 @@
     <title>Jocelyn Liu</title>
     <link rel="icon" href="assets/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=<?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@400;700&display=swap" rel="stylesheet">
@@ -23,10 +38,12 @@
             
             <form id="search-form">
             <div class="form-group rounded" id="book-search">
+                <div class="form-outline">
                 <input type="search" class="form-control rounded" placeholder="Search by title or author" aria-label="Search" id="search-term-id"/>
                 <button button type="submit" class="btn btn-light">
                     <img class="search-icon" src="assets/search-icon.png" style="width: 30px;">
                 </button>
+            </div>
             </form>
     </div>
 
@@ -35,10 +52,18 @@
             <div class="row form-group"id="search-results">
                 
             </div>
-
-            <button type="submit" class="btn btn-primary">Send</input>
+            <button type="submit" class="btn btn-primary" id="send-button"s>Select</button>
         </form>
     </div>
+
+    
+    <div class="row">
+    <?php while ( $row = $result->fetch_assoc() ) : ?>
+        <img src="<?php echo $row["imageURL"]?>" class="book-cover"/>
+    <?php endwhile; ?>
+    </div>
+</div>
+
 
     
     
@@ -71,12 +96,15 @@
         // Run through the list of results and dynamically create a <li> tag for each of the result
         for(let i=0; i< 5; i++) {
             let htmlString = `
+            <div class="book-result">
+                <input type="radio" id=${resultItems[i].id}  value=${resultItems[i].id} name="book-ids">
+                <label for=${resultItems[i].id}><img src=${resultItems[i].volumeInfo.imageLinks['smallThumbnail']}>
+                        <p>${resultItems[i].volumeInfo.title} <br> by ${resultItems[i].volumeInfo.authors}</label>
 
-            <input type="radio" id=${resultItems[i].id}  value=${resultItems[i].id} name="book-ids">
-            <label for=${resultItems[i].id}><img src=${resultItems[i].volumeInfo.imageLinks['smallThumbnail']}>
-                    <p>${resultItems[i].volumeInfo.title} <br> by ${resultItems[i].volumeInfo.authors}</label>
+                <br>
+            </div>
 
-            <br>
+            
         `;
             // Append to the <ol> tag
             resultsList.innerHTML += htmlString;
@@ -93,7 +121,7 @@
                     // When ajax call is complete, call this function, pass a string with the response
                     returnFunction( xhr.responseText );
                 } else {
-                    alert('this is empty. pls type something');
+                    alert('Type in a title or author!');
                     console.log(xhr.status);
                 }
             }

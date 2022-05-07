@@ -226,3 +226,30 @@ a:hover {
     width: 400px;
     margin: 2%;
 }
+
+label {
+    margin: 1%;
+}
+
+#book-search {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.book-result {
+    width: 20%;
+}
+
+#book-data {
+    display: none;
+}
+
+.book-cover {
+    width: 150px;
+    height: 225px;
+    object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
