@@ -24,11 +24,12 @@
             <br> <br>
             In addition to being a full time student, <b>I am an actor</b>. I have been professionally acting since I was 17 years old. 
             <br> <br>
-            This project was a fun opportunity for me to showcase both sides of my life. I've had this idea in my head for long time to create a website that could accurately capture what it feels like to have one foot in two differents worlds. 
-            <b>Click on the mask in the corner</b> (when you're on my home page) :)
+            This project was a fun opportunity for me to showcase both sides of my life. I've had this idea in my head for long time to create a website that could accurately capture what it feels like to have one foot in two differents worlds. <br>
+            <br><b>Click on the mask in the corner twice and find out more about my acting life :)</b>
         </p>
     </div>
 
-    
+    <?php include 'footer.php' ?>
+
 </body>
 </html>

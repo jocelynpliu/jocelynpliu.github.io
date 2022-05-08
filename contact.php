@@ -52,6 +52,7 @@ if ( isset($_POST['name']) && isset($_POST['email']) ) {
     <input type="submit" value="Submit">
 
   </form>
+
 </body>
 
 <script>

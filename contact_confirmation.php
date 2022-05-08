@@ -50,6 +50,6 @@ if (isset($_POST['name']))
         <?php endif; ?>
     </div>
 
-    
+    <?php include 'footer.php' ?>
 </body>
 </html>

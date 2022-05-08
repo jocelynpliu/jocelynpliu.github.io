@@ -7,7 +7,7 @@
 		exit();
 	}
 
-    $sql = 'SELECT imageURL from books;';
+    $sql = 'SELECT * from books;';
     $result = $mysqli->query($sql);
 
     $mysqli->close();
@@ -52,22 +52,33 @@
             <div class="row form-group"id="search-results">
                 
             </div>
-            <button type="submit" class="btn btn-primary" id="send-button"s>Select</button>
+            <button type="submit" class="btn btn-primary" id="send-button"s>Add this to my list!</button>
         </form>
     </div>
 
     <h5> <b>Reccomendations submitted through this page</b></h5>
     <div class="row my-3" id="current-recs">
-        
+    
     <?php while ( $row = $result->fetch_assoc() ) : ?>
-        <img src="<?php echo $row["imageURL"]?>" class="book-cover"/>
+        <form action="book_detail.php" method="GET" class="book-cover">
+                <div class="col">
+                    <input type="text" id="id" name="id" value="<?php echo $row["ID"]?>" class="data"> </input>
+                    <button class="book-detail">
+                        <img src="<?php echo $row["imageURL"]?>" class="book-cover p-3"/></a>
+                        <p class="book-description">
+                        <?php echo $row["title"]?> by <?php echo $row["author"]?>
+                        </p>  
+                    </button>
+
+                    
+                </div>
+                          
+        </form>
     <?php endwhile; ?>
     </div>
 </div>
 
 
-    
-    
 
 <script>
 
@@ -129,6 +140,6 @@
         xhr.send();
     };
 }
-            </script>
+</script>
 </body>
 </html>

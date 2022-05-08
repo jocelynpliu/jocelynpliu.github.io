@@ -50,7 +50,7 @@
 
     let resultsList = document.querySelector("#book-rec");
 
-    let htmlString = ` <div> <img src="${jsResults.volumeInfo.imageLinks["smallThumbnail"]}" style="width: 100px;"> <p>${jsResults.volumeInfo.title} <br> by ${jsResults.volumeInfo.authors} </p> <br> <p>${jsResults.volumeInfo.description}</p> </div>`;
+    let htmlString = ` <div> <p>${jsResults.volumeInfo.title} <br> by ${jsResults.volumeInfo.authors} </p>  <img src="${jsResults.volumeInfo.imageLinks["smallThumbnail"]}" style="width: 100px;" alt="book cover "></div> <br> <p>${jsResults.volumeInfo.description}</p>`;
     resultsList.innerHTML += htmlString;
 
     console.log(jsResults);
