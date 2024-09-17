@@ -2,6 +2,19 @@ body {
     font-family: 'Dosis';
     color: black;
     text-align: center;
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .name-header {
@@ -218,17 +231,26 @@ a:hover {
 
 #photo-head img {
     width: 75px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    
 }
 
 .photo-h img {
-    width: 600px;
-    margin: 2%;
+    width: 70%;
 }
 
-.photo-v img {
-    width: 400px;
-    margin: 2%;
+.photo-w img {
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5%;
+    padding-bottom: 1%;
+}
+
+#angel {
+    width: 25%;
+}
+
+footer {
+    font-size: 12px;
 }
